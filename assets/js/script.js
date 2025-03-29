@@ -32,7 +32,7 @@ let currentTab = [
 
 let currentPlayer = "cross"
 
-turn.innerHTML = `-It's CROSS' s turn now.`
+turn.innerHTML = `-It's CROSS' s turn now`
 
 restart.addEventListener("click", () => {
     cross1.classList.remove("remove")
@@ -90,7 +90,7 @@ cross1.addEventListener("click", () => {
         circle1.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(0, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross2.addEventListener("click", () => {
@@ -100,7 +100,7 @@ cross2.addEventListener("click", () => {
         circle2.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(1, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross3.addEventListener("click", () => {
@@ -110,7 +110,7 @@ cross3.addEventListener("click", () => {
         circle3.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(2, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross4.addEventListener("click", () => {
@@ -120,7 +120,7 @@ cross4.addEventListener("click", () => {
         circle4.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(0, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross5.addEventListener("click", () => {
@@ -130,7 +130,7 @@ cross5.addEventListener("click", () => {
         circle5.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(1, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross6.addEventListener("click", () => {
@@ -140,7 +140,7 @@ cross6.addEventListener("click", () => {
         circle6.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(2, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross7.addEventListener("click", () => {
@@ -150,7 +150,7 @@ cross7.addEventListener("click", () => {
         circle7.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(0, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross8.addEventListener("click", () => {
@@ -160,7 +160,7 @@ cross8.addEventListener("click", () => {
         circle8.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(1, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 cross9.addEventListener("click", () => {
@@ -170,7 +170,7 @@ cross9.addEventListener("click", () => {
         circle9.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(2, 1, "X"))
         console.log(currentTab)
-        turn.innerHTML = `It's CIRCLE' s turn now.`
+        turn.innerHTML = `It's CIRCLE' s turn now`
     }
 })
 
@@ -182,7 +182,7 @@ circle1.addEventListener("click", () => {
         cross1.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(0, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle2.addEventListener("click", () => {
@@ -192,7 +192,7 @@ circle2.addEventListener("click", () => {
         cross2.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(1, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle3.addEventListener("click", () => {
@@ -202,7 +202,7 @@ circle3.addEventListener("click", () => {
         cross3.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(2, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle4.addEventListener("click", () => {
@@ -212,7 +212,7 @@ circle4.addEventListener("click", () => {
         cross4.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(0, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle5.addEventListener("click", () => {
@@ -222,7 +222,7 @@ circle5.addEventListener("click", () => {
         cross5.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(1, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle6.addEventListener("click", () => {
@@ -232,7 +232,7 @@ circle6.addEventListener("click", () => {
         cross6.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(2, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle7.addEventListener("click", () => {
@@ -242,7 +242,7 @@ circle7.addEventListener("click", () => {
         cross7.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(0, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle8.addEventListener("click", () => {
@@ -252,7 +252,7 @@ circle8.addEventListener("click", () => {
         cross8.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(1, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 circle9.addEventListener("click", () => {
@@ -262,7 +262,7 @@ circle9.addEventListener("click", () => {
         cross9.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(2, 1, "O"))
         console.log(currentTab)
-        turn.innerHTML = `-It's CROSS' s turn now.`
+        turn.innerHTML = `-It's CROSS' s turn now`
     }
 })
 
