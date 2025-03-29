@@ -279,7 +279,7 @@ setInterval(() => {
             restart.style.opacity = 0
             restart.style.scale = 0.5
         }, 3000);
-    } else if (currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "X") {
+    } else if (currentTab[1][0] == currentTab[1][1] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "X") {
         winner.style.opacity = 1
         winner.style.scale = 1
         restart.style.opacity = 1
