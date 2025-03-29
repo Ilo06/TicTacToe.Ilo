@@ -27,6 +27,7 @@ main{
     padding-inline: 30px;
     border-radius: 7px;
     transform: translateY(20px);
+    margin-top: -40px;
     scale: 0.5;
     opacity: 0;
     transition: all ease 0.5s;
@@ -91,7 +92,30 @@ td{
 
 }
 
+.win{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
+.restart:active{
+    scale: 1.05;
+}
+
+.restart{
+    height: 37px;
+    width: 50px;
+    border-radius: 7px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 25px;
+    scale: 0.5;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
 @media (max-width : 720px) {
     main{
         flex-direction: column;
