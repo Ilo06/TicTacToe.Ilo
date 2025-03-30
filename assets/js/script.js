@@ -484,3 +484,47 @@ setInterval(() => {
     }
 
 }, 100);
+
+
+
+// if (currentPlayer == "cross") {
+//     cross1.style.zIndex = 100;
+//     cross2.style.zIndex = 100;
+//     cross3.style.zIndex = 100;
+//     cross4.style.zIndex = 100;
+//     cross5.style.zIndex = 100;
+//     cross6.style.zIndex = 100;
+//     cross7.style.zIndex = 100;
+//     cross8.style.zIndex = 100;
+//     cross9.style.zIndex = 100;
+
+//     circle1.style.zIndex = 1;
+//     circle2.style.zIndex = 1;
+//     circle3.style.zIndex = 1;
+//     circle4.style.zIndex = 1;
+//     circle5.style.zIndex = 1;
+//     circle6.style.zIndex = 1;
+//     circle7.style.zIndex = 1;
+//     circle8.style.zIndex = 1;
+//     circle9.style.zIndex = 1;
+// } else if (currentPlayer == "circle"){
+//     cross1.style.zIndex = 1;
+//     cross2.style.zIndex = 1;
+//     cross3.style.zIndex = 1;
+//     cross4.style.zIndex = 1;
+//     cross5.style.zIndex = 1;
+//     cross6.style.zIndex = 1;
+//     cross7.style.zIndex = 1;
+//     cross8.style.zIndex = 1;
+//     cross9.style.zIndex = 1;
+
+//     circle1.style.zIndex = 100;
+//     circle2.style.zIndex = 100;
+//     circle3.style.zIndex = 100;
+//     circle4.style.zIndex = 100;
+//     circle5.style.zIndex = 100;
+//     circle6.style.zIndex = 100;
+//     circle7.style.zIndex = 100;
+//     circle8.style.zIndex = 100;
+//     circle9.style.zIndex = 100;
+// }
