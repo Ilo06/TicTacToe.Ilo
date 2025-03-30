@@ -55,25 +55,25 @@ restart.addEventListener("click", () => {
     circle8.classList.remove("remove")
     circle9.classList.remove("remove")
 
-    cross1.style.opacity = 0.1
-    cross2.style.opacity = 0.1
-    cross3.style.opacity = 0.1
-    cross4.style.opacity = 0.1
-    cross5.style.opacity = 0.1
-    cross6.style.opacity = 0.1
-    cross7.style.opacity = 0.1
-    cross8.style.opacity = 0.1
-    cross9.style.opacity = 0.1
+    cross1.style.opacity = 0;
+    cross2.style.opacity = 0;
+    cross3.style.opacity = 0;
+    cross4.style.opacity = 0;
+    cross5.style.opacity = 0;
+    cross6.style.opacity = 0;
+    cross7.style.opacity = 0;
+    cross8.style.opacity = 0;
+    cross9.style.opacity = 0;
 
-    circle1.style.opacity = 0.1
-    circle2.style.opacity = 0.1
-    circle3.style.opacity = 0.1
-    circle4.style.opacity = 0.1
-    circle5.style.opacity = 0.1
-    circle6.style.opacity = 0.1
-    circle7.style.opacity = 0.1
-    circle8.style.opacity = 0.1
-    circle9.style.opacity = 0.1
+    circle1.style.opacity = 0;
+    circle2.style.opacity = 0;
+    circle3.style.opacity = 0;
+    circle4.style.opacity = 0;
+    circle5.style.opacity = 0;
+    circle6.style.opacity = 0;
+    circle7.style.opacity = 0;
+    circle8.style.opacity = 0;
+    circle9.style.opacity = 0;
 
     winner.style.opacity = 0;
     winner.style.scale = 0.5;
@@ -86,6 +86,7 @@ restart.addEventListener("click", () => {
 cross1.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross1.style.opacity = 1
+        cross1.style.height = "5px"
         currentPlayer = "circle"
         circle1.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(0, 1, "X"))
@@ -96,6 +97,7 @@ cross1.addEventListener("click", () => {
 cross2.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross2.style.opacity = 1
+        cross2.style.height = "5px"
         currentPlayer = "circle"
         circle2.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(1, 1, "X"))
@@ -106,6 +108,7 @@ cross2.addEventListener("click", () => {
 cross3.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross3.style.opacity = 1
+        cross3.style.height = "5px"
         currentPlayer = "circle"
         circle3.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(2, 1, "X"))
@@ -116,6 +119,7 @@ cross3.addEventListener("click", () => {
 cross4.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross4.style.opacity = 1
+        cross4.style.height = "5px"
         currentPlayer = "circle"
         circle4.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(0, 1, "X"))
@@ -126,6 +130,7 @@ cross4.addEventListener("click", () => {
 cross5.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross5.style.opacity = 1
+        cross5.style.height = "5px"
         currentPlayer = "circle"
         circle5.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(1, 1, "X"))
@@ -136,6 +141,7 @@ cross5.addEventListener("click", () => {
 cross6.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross6.style.opacity = 1
+        cross6.style.height = "5px"
         currentPlayer = "circle"
         circle6.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(2, 1, "X"))
@@ -146,6 +152,7 @@ cross6.addEventListener("click", () => {
 cross7.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross7.style.opacity = 1
+        cross7.style.height = "5px"
         currentPlayer = "circle"
         circle7.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(0, 1, "X"))
@@ -156,6 +163,7 @@ cross7.addEventListener("click", () => {
 cross8.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross8.style.opacity = 1
+        cross8.style.height = "5px"
         currentPlayer = "circle"
         circle8.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(1, 1, "X"))
@@ -166,6 +174,7 @@ cross8.addEventListener("click", () => {
 cross9.addEventListener("click", () => {
     if (currentPlayer == "cross") {
         cross9.style.opacity = 1
+        cross9.style.height = "5px"
         currentPlayer = "circle"
         circle9.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(2, 1, "X"))
@@ -178,6 +187,8 @@ cross9.addEventListener("click", () => {
 circle1.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle1.style.opacity = 1
+        circle1.style.width = "35px"
+        circle1.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross1.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(0, 1, "O"))
@@ -188,6 +199,8 @@ circle1.addEventListener("click", () => {
 circle2.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle2.style.opacity = 1
+        circle2.style.width = "35px"
+        circle2.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross2.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(1, 1, "O"))
@@ -198,6 +211,8 @@ circle2.addEventListener("click", () => {
 circle3.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle3.style.opacity = 1
+        circle3.style.width = "35px"
+        circle3.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross3.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[0].splice(2, 1, "O"))
@@ -208,6 +223,8 @@ circle3.addEventListener("click", () => {
 circle4.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle4.style.opacity = 1
+        circle4.style.width = "35px"
+        circle4.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross4.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(0, 1, "O"))
@@ -218,6 +235,8 @@ circle4.addEventListener("click", () => {
 circle5.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle5.style.opacity = 1
+        circle5.style.width = "35px"
+        circle5.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross5.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(1, 1, "O"))
@@ -228,6 +247,8 @@ circle5.addEventListener("click", () => {
 circle6.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle6.style.opacity = 1
+        circle6.style.width = "35px"
+        circle6.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross6.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[1].splice(2, 1, "O"))
@@ -238,6 +259,8 @@ circle6.addEventListener("click", () => {
 circle7.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle7.style.opacity = 1
+        circle7.style.width = "35px"
+        circle7.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross7.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(0, 1, "O"))
@@ -248,6 +271,8 @@ circle7.addEventListener("click", () => {
 circle8.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle8.style.opacity = 1
+        circle8.style.width = "35px"
+        circle8.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross8.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(1, 1, "O"))
@@ -258,6 +283,8 @@ circle8.addEventListener("click", () => {
 circle9.addEventListener("click", () => {
     if (currentPlayer == "circle") {
         circle9.style.opacity = 1
+        circle9.style.width = "35px"
+        circle9.style.backgroundColor = "transparent"
         currentPlayer = "cross"
         cross9.classList.add("remove")
         currentTab = currentTab.splice(0, 3, currentTab[2].splice(2, 1, "O"))
