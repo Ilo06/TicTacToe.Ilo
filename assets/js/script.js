@@ -22,6 +22,9 @@ const turn = document.querySelector(".turn");
 const winner = document.querySelector(".winner")
 const restart = document.getElementById("restart")
 
+const circledraw = document.getElementById("circledraw")
+const crossdraw = document.getElementById("crossdraw")
+
 
 
 let currentTab = [
@@ -306,6 +309,7 @@ circle9.addEventListener("click", () => {
 
 if (currentState == "playing") {
     setInterval(() => {
+        // CROSS WIN CASES
 
         if (currentTab[0][0] == currentTab[0][1] && currentTab[0][0] == currentTab[0][2] && currentTab[0][0] == "X") {
             winner.style.opacity = 1
@@ -313,111 +317,67 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[1][0] == currentTab[1][1] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "X") {
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[2][0] == currentTab[2][1] && currentTab[2][0] == currentTab[2][2] && currentTab[2][0] == "X") {
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][0] == currentTab[1][0] && currentTab[0][0] == currentTab[2][0] && currentTab[0][0] == "X") {
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][1] == currentTab[1][1] && currentTab[0][1] == currentTab[2][1] && currentTab[0][1] == "X") {
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][2] == currentTab[1][2] && currentTab[0][2] == currentTab[2][2] && currentTab[0][2] == "X") {
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][0] == currentTab[1][1] && currentTab[0][0] == currentTab[2][2] && currentTab[0][0] == "X") {
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][2] == currentTab[1][1] && currentTab[0][2] == currentTab[2][0] && currentTab[0][2] == "X") {
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         }
 
-        if (currentTab[0][0] == currentTab[0][1] && currentTab[0][0] == currentTab[0][2] && currentTab[0][0] == "O") {
+        // CIRCLE WIN case
+        else if (currentTab[0][0] == currentTab[0][1] && currentTab[0][0] == currentTab[0][2] && currentTab[0][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -425,12 +385,7 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[2][0] == currentTab[2][1] && currentTab[2][0] == currentTab[2][2] && currentTab[2][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -438,12 +393,7 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][0] == currentTab[1][0] && currentTab[0][0] == currentTab[2][0] && currentTab[0][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -451,12 +401,7 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][1] == currentTab[1][1] && currentTab[0][1] == currentTab[2][1] && currentTab[0][1] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -464,12 +409,7 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][2] == currentTab[1][2] && currentTab[0][2] == currentTab[2][2] && currentTab[0][2] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -477,12 +417,7 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][0] == currentTab[1][1] && currentTab[0][0] == currentTab[2][2] && currentTab[0][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -490,12 +425,7 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
         } else if (currentTab[0][2] == currentTab[1][1] && currentTab[0][2] == currentTab[2][0] && currentTab[0][2] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -503,57 +433,18 @@ if (currentState == "playing") {
             restart.style.opacity = 1
             restart.style.scale = 1
             currentState = "pause"
-            setTimeout(() => {
-                winner.style.opacity = 0
-                winner.style.scale = 0.5
-                restart.style.opacity = 0
-                restart.style.scale = 0.5
-            }, 3000);
+           
+        }
+
+        // DRAW CASE
+        else if ((currentTab.flat(2)).includes(".") == false) {
+            winner.innerHTML = `<h2>IT'S A DRAW</h2>`
+            winner.style.opacity = 1
+            winner.style.scale = 1
+            restart.style.opacity = 1
+            restart.style.scale = 1
+            currentState = "pause"
         }
 
     }, 100);
 }
-
-
-
-// if (currentPlayer == "cross") {
-//     cross1.style.zIndex = 100;
-//     cross2.style.zIndex = 100;
-//     cross3.style.zIndex = 100;
-//     cross4.style.zIndex = 100;
-//     cross5.style.zIndex = 100;
-//     cross6.style.zIndex = 100;
-//     cross7.style.zIndex = 100;
-//     cross8.style.zIndex = 100;
-//     cross9.style.zIndex = 100;
-
-//     circle1.style.zIndex = 1;
-//     circle2.style.zIndex = 1;
-//     circle3.style.zIndex = 1;
-//     circle4.style.zIndex = 1;
-//     circle5.style.zIndex = 1;
-//     circle6.style.zIndex = 1;
-//     circle7.style.zIndex = 1;
-//     circle8.style.zIndex = 1;
-//     circle9.style.zIndex = 1;
-// } else if (currentPlayer == "circle"){
-//     cross1.style.zIndex = 1;
-//     cross2.style.zIndex = 1;
-//     cross3.style.zIndex = 1;
-//     cross4.style.zIndex = 1;
-//     cross5.style.zIndex = 1;
-//     cross6.style.zIndex = 1;
-//     cross7.style.zIndex = 1;
-//     cross8.style.zIndex = 1;
-//     cross9.style.zIndex = 1;
-
-//     circle1.style.zIndex = 100;
-//     circle2.style.zIndex = 100;
-//     circle3.style.zIndex = 100;
-//     circle4.style.zIndex = 100;
-//     circle5.style.zIndex = 100;
-//     circle6.style.zIndex = 100;
-//     circle7.style.zIndex = 100;
-//     circle8.style.zIndex = 100;
-//     circle9.style.zIndex = 100;
-// }
