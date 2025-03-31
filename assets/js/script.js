@@ -24,6 +24,10 @@ const restart = document.getElementById("restart")
 
 const circledraw = document.getElementById("circledraw")
 const crossdraw = document.getElementById("crossdraw")
+const crosswin = document.getElementById("crosswin")
+const circlewin = document.getElementById("circlewin")
+const circlelose = document.getElementById("circlelose")
+const crosslose= document.getElementById("crosslose")
 
 
 
@@ -33,8 +37,15 @@ let currentTab = [
     [".", ".", "."]
 ]
 
+const emptyTab = [
+    [".", ".", "."],
+    [".", ".", "."],
+    [".", ".", "."]
+]
+
 let currentPlayer = "cross"
 let currentState = "playing"
+
 
 turn.innerHTML = `-It's CROSS' s turn now`
 
@@ -69,6 +80,16 @@ restart.addEventListener("click", () => {
         cross7.style.opacity = 0;
         cross8.style.opacity = 0;
         cross9.style.opacity = 0;
+
+        cross1.style.height = "50px";
+        cross2.style.height = "50px";
+        cross3.style.height = "50px";
+        cross4.style.height = "50px";
+        cross5.style.height = "50px";
+        cross6.style.height = "50px";
+        cross7.style.height = "50px";
+        cross8.style.height = "50px";
+        cross9.style.height = "50px";
 
         circle1.style.opacity = 0;
         circle2.style.opacity = 0;
@@ -316,6 +337,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[1][0] == currentTab[1][1] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "X") {
@@ -323,6 +347,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[2][0] == currentTab[2][1] && currentTab[2][0] == currentTab[2][2] && currentTab[2][0] == "X") {
@@ -330,6 +357,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][0] == currentTab[1][0] && currentTab[0][0] == currentTab[2][0] && currentTab[0][0] == "X") {
@@ -337,6 +367,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][1] == currentTab[1][1] && currentTab[0][1] == currentTab[2][1] && currentTab[0][1] == "X") {
@@ -344,6 +377,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][2] == currentTab[1][2] && currentTab[0][2] == currentTab[2][2] && currentTab[0][2] == "X") {
@@ -351,6 +387,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][0] == currentTab[1][1] && currentTab[0][0] == currentTab[2][2] && currentTab[0][0] == "X") {
@@ -358,6 +397,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][2] == currentTab[1][1] && currentTab[0][2] == currentTab[2][0] && currentTab[0][2] == "X") {
@@ -365,6 +407,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            crosswin.innerHTML++;
+            circlelose.innerHTML++;
             currentState = "pause"
            
         }
@@ -376,14 +421,20 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
-        } else if (currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "O") {
+        } else if (currentTab[1][0] == currentTab[1][1] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[2][0] == currentTab[2][1] && currentTab[2][0] == currentTab[2][2] && currentTab[2][0] == "O") {
@@ -392,6 +443,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][0] == currentTab[1][0] && currentTab[0][0] == currentTab[2][0] && currentTab[0][0] == "O") {
@@ -400,6 +454,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][1] == currentTab[1][1] && currentTab[0][1] == currentTab[2][1] && currentTab[0][1] == "O") {
@@ -408,6 +465,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][2] == currentTab[1][2] && currentTab[0][2] == currentTab[2][2] && currentTab[0][2] == "O") {
@@ -416,6 +476,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][0] == currentTab[1][1] && currentTab[0][0] == currentTab[2][2] && currentTab[0][0] == "O") {
@@ -424,6 +487,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
         } else if (currentTab[0][2] == currentTab[1][1] && currentTab[0][2] == currentTab[2][0] && currentTab[0][2] == "O") {
@@ -432,6 +498,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab;
+            circlewin.innerHTML++;
+            crosslose.innerHTML++;
             currentState = "pause"
            
         }
@@ -443,6 +512,9 @@ if (currentState == "playing") {
             winner.style.scale = 1
             restart.style.opacity = 1
             restart.style.scale = 1
+            currentTab = emptyTab
+            circledraw.innerHTML++
+            crossdraw.innerHTML++
             currentState = "pause"
         }
 

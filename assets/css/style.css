@@ -15,6 +15,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow: hidden;
 }
 
 main {
@@ -29,7 +30,7 @@ main {
     text-align: center;
     width: 125px;
     height: 50px;
-    background-color: gray;
+    background-color: #4D4D4D;
     padding-inline: 30px;
     border-radius: 7px;
     transform: translateY(20px);
@@ -44,9 +45,10 @@ main {
     padding-inline: 20px;
     border-radius: 7px;
     background-color: #FC973D;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-weight: 600;
     font-size: 14px;
+    text-align: center;
     box-shadow: 0px 0px 15px 1px #1A1A1A;
     color: #1A1A1A
 }
@@ -61,7 +63,6 @@ table {
     width: 300px;
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 15px 1px #1A1A1A;
-
 }
 
 td {
@@ -121,16 +122,14 @@ td {
     color: #1A1A1A;
     line-height: 30px;
     font-weight: 600;
+}
 
-
-    td {
-        border: 1px solid #1A1A1A;
-        border-top: none;
-        border-left: none;
-        height: fit-content;
-        border-right: none;
-
-    }
+.stats td {
+    border: 1px solid #1A1A1A;
+    border-top: none;
+    border-left: none;
+    height: fit-content;
+    border-right: none;
 }
 
 .win {
@@ -141,15 +140,11 @@ td {
     justify-content: center;
 }
 
-.restart:active {
-    scale: 1.05;
-}
-
 .restart {
     height: 37px;
     width: 50px;
     border-radius: 7px;
-    background-color: gray;
+    background-color: #4D4D4D;
     text-align: center;
     padding-top: 13px;
     font-size: 25px;
