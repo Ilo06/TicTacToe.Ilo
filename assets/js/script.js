@@ -520,3 +520,74 @@ if (currentState == "playing") {
 
     }, 100);
 }
+
+//KEYDOWN RESTART
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == " ") {
+        currentState = "pause"
+
+        cross1.classList.remove("remove")
+        cross2.classList.remove("remove")
+        cross3.classList.remove("remove")
+        cross4.classList.remove("remove")
+        cross5.classList.remove("remove")
+        cross6.classList.remove("remove")
+        cross7.classList.remove("remove")
+        cross8.classList.remove("remove")
+        cross9.classList.remove("remove")
+
+        circle1.classList.remove("remove")
+        circle2.classList.remove("remove")
+        circle3.classList.remove("remove")
+        circle4.classList.remove("remove")
+        circle5.classList.remove("remove")
+        circle6.classList.remove("remove")
+        circle7.classList.remove("remove")
+        circle8.classList.remove("remove")
+        circle9.classList.remove("remove")
+
+        cross1.style.opacity = 0;
+        cross2.style.opacity = 0;
+        cross3.style.opacity = 0;
+        cross4.style.opacity = 0;
+        cross5.style.opacity = 0;
+        cross6.style.opacity = 0;
+        cross7.style.opacity = 0;
+        cross8.style.opacity = 0;
+        cross9.style.opacity = 0;
+
+        cross1.style.height = "50px";
+        cross2.style.height = "50px";
+        cross3.style.height = "50px";
+        cross4.style.height = "50px";
+        cross5.style.height = "50px";
+        cross6.style.height = "50px";
+        cross7.style.height = "50px";
+        cross8.style.height = "50px";
+        cross9.style.height = "50px";
+
+        circle1.style.opacity = 0;
+        circle2.style.opacity = 0;
+        circle3.style.opacity = 0;
+        circle4.style.opacity = 0;
+        circle5.style.opacity = 0;
+        circle6.style.opacity = 0;
+        circle7.style.opacity = 0;
+        circle8.style.opacity = 0;
+        circle9.style.opacity = 0;
+
+        winner.style.opacity = 0;
+        winner.style.scale = 0.5;
+
+        restart.style.opacity = 0;
+        restart.style.scale = 0.5;
+
+        currentTab = [
+            [".", ".", "."],
+            [".", ".", "."],
+            [".", ".", "."]
+        ]
+        currentState = "playing"
+    }
+})
