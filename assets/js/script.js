@@ -30,6 +30,8 @@ const circlelose = document.getElementById("circlelose")
 const crosslose = document.getElementById("crosslose")
 
 const refreshIcon = document.getElementById("refresh_icon")
+const toggleStats = document.getElementById("toggle_stats")
+const stats = document.querySelector(".stats")
 
 
 let currentTab = [
@@ -43,6 +45,17 @@ const emptyTab = [
     [".", ".", "."],
     [".", ".", "."]
 ]
+
+toggleStats.addEventListener("click", () => {
+    stats.classList.toggle("hide")
+    if (stats.classList.contains("hide") == false) {
+        toggleStats.innerHTML = "✖️"
+        toggleStats.style.paddingInline = "10px"
+    } else {
+        toggleStats.style.paddingInline = "20px"
+        toggleStats.innerHTML = "Show Stats"
+    }
+})
 
 let currentPlayer = "cross"
 let currentState = "playing"
@@ -602,5 +615,5 @@ document.addEventListener("keydown", (e) => {
 })
 
 refreshIcon.addEventListener("click", () => {
-    refreshIcon.style.rotate = "180deg"
+    refreshIcon.style.rotate = "-90deg"
 })
