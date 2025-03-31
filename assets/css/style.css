@@ -153,6 +153,14 @@ td {
     transition: all ease 0.5s;
 }
 
+#refresh_icon{
+    transition: all ease 0.2s;
+}
+
+.restart img{
+    color: wheat;
+}
+
 @media (max-width : 720px) {
     body {
         padding-top: 0%;

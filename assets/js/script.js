@@ -27,8 +27,9 @@ const crossdraw = document.getElementById("crossdraw")
 const crosswin = document.getElementById("crosswin")
 const circlewin = document.getElementById("circlewin")
 const circlelose = document.getElementById("circlelose")
-const crosslose= document.getElementById("crosslose")
+const crosslose = document.getElementById("crosslose")
 
+const refreshIcon = document.getElementById("refresh_icon")
 
 
 let currentTab = [
@@ -342,7 +343,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[1][0] == currentTab[1][1] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "X") {
             winner.innerHTML = `<h2>CROSS WON</h2>`
             winner.style.opacity = 1
@@ -353,7 +354,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[2][0] == currentTab[2][1] && currentTab[2][0] == currentTab[2][2] && currentTab[2][0] == "X") {
             winner.innerHTML = `<h2>CROSS WON</h2>`
             winner.style.opacity = 1
@@ -364,7 +365,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][0] == currentTab[1][0] && currentTab[0][0] == currentTab[2][0] && currentTab[0][0] == "X") {
             winner.innerHTML = `<h2>CROSS WON</h2>`
             winner.style.opacity = 1
@@ -375,7 +376,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][1] == currentTab[1][1] && currentTab[0][1] == currentTab[2][1] && currentTab[0][1] == "X") {
             winner.innerHTML = `<h2>CROSS WON</h2>`
             winner.style.opacity = 1
@@ -386,7 +387,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][2] == currentTab[1][2] && currentTab[0][2] == currentTab[2][2] && currentTab[0][2] == "X") {
             winner.innerHTML = `<h2>CROSS WON</h2>`
             winner.style.opacity = 1
@@ -397,7 +398,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][0] == currentTab[1][1] && currentTab[0][0] == currentTab[2][2] && currentTab[0][0] == "X") {
             winner.innerHTML = `<h2>CROSS WON</h2>`
             winner.style.opacity = 1
@@ -408,7 +409,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][2] == currentTab[1][1] && currentTab[0][2] == currentTab[2][0] && currentTab[0][2] == "X") {
             winner.innerHTML = `<h2>CROSS WON</h2>`
             winner.style.opacity = 1
@@ -419,7 +420,7 @@ if (currentState == "playing") {
             crosswin.innerHTML++;
             circlelose.innerHTML++;
             currentState = "pause"
-           
+
         }
 
         // CIRCLE WIN case
@@ -433,7 +434,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[1][0] == currentTab[1][1] && currentTab[1][0] == currentTab[1][2] && currentTab[1][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -444,7 +445,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[2][0] == currentTab[2][1] && currentTab[2][0] == currentTab[2][2] && currentTab[2][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -455,7 +456,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][0] == currentTab[1][0] && currentTab[0][0] == currentTab[2][0] && currentTab[0][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -466,7 +467,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][1] == currentTab[1][1] && currentTab[0][1] == currentTab[2][1] && currentTab[0][1] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -477,7 +478,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][2] == currentTab[1][2] && currentTab[0][2] == currentTab[2][2] && currentTab[0][2] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -488,7 +489,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][0] == currentTab[1][1] && currentTab[0][0] == currentTab[2][2] && currentTab[0][0] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -499,7 +500,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         } else if (currentTab[0][2] == currentTab[1][1] && currentTab[0][2] == currentTab[2][0] && currentTab[0][2] == "O") {
             winner.innerHTML = `<h2>CIRCLE WON</h2>`
             winner.style.opacity = 1
@@ -510,7 +511,7 @@ if (currentState == "playing") {
             circlewin.innerHTML++;
             crosslose.innerHTML++;
             currentState = "pause"
-           
+
         }
 
         // DRAW CASE
@@ -598,4 +599,8 @@ document.addEventListener("keydown", (e) => {
         ]
         currentState = "playing"
     }
+})
+
+refreshIcon.addEventListener("click", () => {
+    refreshIcon.style.rotate = "180deg"
 })
