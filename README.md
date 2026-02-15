@@ -44,16 +44,6 @@ If all spaces on the board are filled without a winner, the game results in a **
 
 ---
 
-## 🧩 Variations
-
-Beyond the traditional **3x3 grid**, there are many fun variations:
-- 🔲 Larger boards like **4x4** or **5x5**
-- 🧊 **3D boards** for extra challenge
-- 🎯 Custom rules for added complexity
-
-These add more depth and variety for experienced players.
-
----
 
 ## 🎯 Conclusion
 
